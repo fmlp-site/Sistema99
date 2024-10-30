@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Inscrição</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Formulário de Inscrição</h2>
+  <form id="form-inscricao">
+    <label>Nome Completo:</label>
+    <input type="text" id="nomeCompleto" required>
+    
+    <label>Data de Nascimento:</label>
+    <input type="date" id="dataNascimento" required>
+
+    <label>Escolha do Curso:</label>
+    <select id="curso" required>
+      <option value="curso1">Curso 1</option>
+      <option value="curso2">Curso 2</option>
+      <!-- Adicione mais opções conforme necessário -->
+    </select>
+
+    <label>Modalidade de Concorrência:</label>
+    <select id="modalidadeConcorrencia" required>
+      <option value="amplaConcorrencia">Ampla Concorrência</option>
+      <option value="cotista">Cotista</option>
+    </select>
+
+    <label>Nome do Pai:</label>
+    <input type="text" id="nomePai">
+
+    <label>Nome da Mãe:</label>
+    <input type="text" id="nomeMae">
+
+    <label>Nome dos Irmãos:</label>
+    <input type="text" id="nomeIrmaos">
+
+    <label>Nome da Escola em que terminou o ensino médio:</label>
+    <input type="text" id="nomeEscola" required>
+
+    <label>CPF:</label>
+    <input type="text" id="cpf" required>
+
+    <label>Foto 3x4:</label>
+    <input type="file" id="foto3x4" required>
+
+    <label>Histórico Escolar:</label>
+    <input type="file" id="historicoEscolar" required>
+
+    <button type="button" onclick="enviarInscricao()">Enviar Inscrição</button>
+  </form>
+
+  <script src="inscricao.js"></script>
+</body>
+</html>
